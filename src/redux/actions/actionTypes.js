@@ -1,0 +1,18 @@
+export const actionTypes = {
+    SET_CURRENT_USER: "SET_CURRENT_USER",
+    SIGNIN_SUCCESS: "SIGNIN_SUCCESS",
+    SIGNIN_ERROR: "SIGNIN_ERROR",
+    SIGNIN_PROCESSING: "SIGNIN_PROCESSING",
+    SIGNIN_REQUEST_OTP: "SIGNIN_REQUEST_OTP",
+    SIGNIN_SENT_OTP: "SIGNIN_SENT_OTP",
+    LOG_OUT: "LOG_OUT",
+
+    FETCH_PROCESSING: "FETCH_PROCESSING",
+    FETCH_SUCCESS: "FETCH_SUCCESS",
+    FETCH_ERROR: "FETCH_ERROR",
+
+    CHECK_RENEW_TOKEN: "CHECK_RENEW_TOKEN", // (if expired) gets new token for refresh token
+    CHECK_SET_STORED_TOKEN: "CHECK_SET_STORED_TOKEN", // (if not expired) gets token from memory
+    CHECK_NO_TOKEN: "CHECK_NO_TOKEN", // (if first login/logged out) does nothing
+    CHECK_FAILED: "CHECK_FAILED"
+}
